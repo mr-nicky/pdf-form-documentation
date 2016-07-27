@@ -80,7 +80,7 @@
 `driver.birth_date`                           | Дата рождения водетеля                         | Объект даты    | 07.07.1951
 `driver.credential`                           | См. Типы документов                            | Массив         | Массив данных документа
 `driver.driving_experience_started`           | Водительский стаж (дата начала вождения)       | Дата           | 07.07.1988
-`cred.credential_type`                        | Тип документа                                  | ID справочника | Паспорт
+`cred.credential_type`                        | Тип документа (/admin/client/credentialtype/)  | ID справочника | Паспорт
 `cred.series`                                 | Серия документа                                | Число          | 3345
 `cred.number`                                 | Номер документа                                | Число          | 3427723
 `car.car_mark`                                | Марка машины                                   | Строка         | BMW
@@ -91,12 +91,11 @@
 `car.car_mark.title`                          | Марка машины                                   | Строка         | BMW
 `car.manufacturing_date.year`                 | Дата производства автомобиля                   | Число          | 2007
 `document_type`                               | Тип документа                                  | ID справочника | Водительское удостоверение
-`policy.creator.company.bunch`                |                                                | ID справочника |
-`policy.insured_object.insurant.legal_person` |                                                | ID справочника |
+`policy.creator.company.bunch`                | Набор печатных форм компании                   | ID справочника | Брутто/Брутто
 `insurant`                                    | ФИО страхователя                               | Строка         | Иванов Иван Иванович
 `insurant.first_name`                         | Имя страхователя                               | Строка         | Иван
 `insurant.last_name`                          | Фамилия страхователя                           | Строка         | Иванов
-`insurant.patronymic`                         | Отчество страхователя                          | Строка         |
+`insurant.patronymic`                         | Отчество страхователя                          | Строка         | Иванович
 `insurant.title_eng`                          | Фамилия имя отчество на английском             | Строка         | Ivanov Ivan Ivanovich
 `insurant.first_name_eng`                     | Имя страхователя на латинице                   | Строка         | Ivan
 `insurant.last_name_eng`                      | Фамилия страхователя на латинице               | Строка         | Ivanov
@@ -116,10 +115,9 @@
 `storage.data.Ssum`                           | Общая страховая премия                         | Число          | 15000
 `storage.data.Sdo`                            | Страховая сумма ДО                             | Число          | 100000
 `storage.data.Sns`                            | Страховая премия «Несчастный случай»           | Число          | 10000
-`storage.data.S_uscherb_polis`                |                                                |                |
-`storage.data.Sdgo`                           | Страховая премия «Гражданская ответственность» | Число          |
-`policy.insured_object.insurant.legal_person` | Юр. лицо ???                                   |                |
-`insurant.representative_number`              | Номер доверенности                             | Число          |
+`storage.data.Sdgo`                           | Страховая премия «Гражданская ответственность» | Число          | 34000
+`policy.insured_object.insurant.legal_person` | Юр. лицо                                       | Строка         | ОАО "Фирма"
+`insurant.representative_number`              | Номер доверенности                             | Число          | 344242
 `insurant.representative_issue_date`          | Дата дейсвия доверенности                      | Объект даты    | 07.07.1951
 `parameters.insurant_phone`                   | Телефон стархователя                           | Строка         | 9112993453
 `parameters.insurant_email`                   | Почтовый ящик страхователя                     | Строка         | ivan@mail.ru
